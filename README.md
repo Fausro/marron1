@@ -1,0 +1,2 @@
+# marron1
+Tarea para subir la solución del marrón Swing. Se podrá entregar hasta el jueves 11 de Febrero (inclusive).  Lo que se pide son dos ficheros: uno con el JAR ejecutable que incluya los fuentes y un pdf en el que indiquéis LAS HORAS DE DEDICACIÓN A DICHA TAREA junto con una breve descripción relativa a como se ha resuelto el "marrón". Nota: para crear el JAR podéis consultar el documento "Crear el fichero JAR en Eclipse del proyecto (incluyendo los fuentes)" en la sección del proyecto. HAY QUE SUBIR UNA SOLUCIÓN POR CADA GRUPO
