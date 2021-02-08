@@ -192,7 +192,7 @@ public class OfferBooking extends JFrame {
 				if (offerCollection.isEmpty()) searchResult.setText("No offers in that city in that date");
 				else searchResult.setText("Choose an available offer in this list:");
 				}catch(Exception exce) {
-					searchResult.setText("Inserte una fecha valida");
+					searchResult.setText("Invalid date, please enter a valid date");
 				}
 			}
 		});
