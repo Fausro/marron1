@@ -180,7 +180,17 @@ public class OfferBooking extends JFrame {
 				
 				bookOffer.setText("");
 				try {
-					java.util.Date date =newDate(Integer.parseInt(year.getText()),month.getSelectedIndex(),Integer.parseInt(day.getText()));
+					Calendar calendar = Calendar.getInstance();
+	                int yearI = Integer.parseInt(year.getText());
+	                int monthI = month.getSelectedIndex();
+	                int maxD = 0;
+	                calendar.set(yearI, monthI, 1);	                   
+	                maxD = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
+	                int dayI = Integer.parseInt(day.getText());
+	                if(dayI <= 0 || dayI > maxD)
+	                	throw new NumberFormatException();	           
+	                Date date =newDate(yearI, monthI, dayI);					
+					
 					offerCollection=businessLogic.getConcreteOffers(city.getText(),date);
 					for (Offer v : offerCollection)  offerInfo.addElement(v); 
 					if (offerCollection.isEmpty()) searchResult.setText("No offers in that city in that date");
